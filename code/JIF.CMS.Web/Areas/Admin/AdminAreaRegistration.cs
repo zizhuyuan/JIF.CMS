@@ -17,8 +17,8 @@ namespace JIF.CMS.Web.Areas.Admin
             context.MapRoute(
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
-                 new[] { "JIF.CMS.Web.Areas.Admin" }
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                new[] { "JIF.CMS.Web.Areas.Admin.Controllers" }
             );
         }
     }

@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detail</title>
+</head>
+<body>
+    <div>
+        @{
+            var admin = ViewBag.Admin as JIF.CMS.Repositores.jif_sysadmin;
+        }
+
+        <h1>@admin.nickname</h1>
+        <p>username: @admin.username</p>
+        <p>pass: @admin.pass</p>
+        <p>email: @admin.email</p>
+
+    </div>
+</body>
+</html>

@@ -41,6 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysAdminServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JIF.CMS.Repositores\JIF.CMS.Repositores.csproj">
+      <Project>{312FC9C8-CA63-4150-9B71-E40F92E8162C}</Project>
+      <Name>JIF.CMS.Repositores</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

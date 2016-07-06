@@ -17,7 +17,7 @@ namespace JIF.CMS.Web
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "JIF.CMS.Web" }
+                namespaces: new[] { "JIF.CMS.Web.Controllers" }
             );
         }
     }

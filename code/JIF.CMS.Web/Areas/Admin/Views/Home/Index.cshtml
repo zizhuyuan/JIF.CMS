@@ -11,8 +11,18 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
+    <div>
         <h1>Hello Admin.</h1>
+
+        @{
+            var arrAdmin = ViewBag.sysAdmins as List<JIF.CMS.Repositores.jif_sysadmin>;
+        }
+        <ul>
+            @foreach (var item in arrAdmin)
+            {
+                <li><a href="@Url.Action("Detail", new { id = item.Id })">@item.nickname</a></li>
+            }
+        </ul>
     </div>
 </body>
 </html>
