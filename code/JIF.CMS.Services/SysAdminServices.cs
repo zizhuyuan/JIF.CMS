@@ -19,5 +19,11 @@ namespace JIF.CMS.Services
         {
             return new SysAdminRepository().Load();
         }
+
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

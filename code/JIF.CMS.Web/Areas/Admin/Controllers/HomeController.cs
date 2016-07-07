@@ -21,5 +21,10 @@ namespace JIF.CMS.Web.Areas.Admin.Controllers
             ViewBag.Admin = new SysAdminServices().Load(id);
             return View();
         }
+
+        public string getDate()
+        {
+            return DateTime.Now.ToShortDateString();
+        }
     }
 }
