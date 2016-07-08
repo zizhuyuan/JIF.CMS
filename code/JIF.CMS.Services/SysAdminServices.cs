@@ -25,5 +25,9 @@ namespace JIF.CMS.Services
         {
             throw new NotImplementedException();
         }
+        public  void Test()
+        {
+
+        }
     }
 }
